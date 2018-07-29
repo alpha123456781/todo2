@@ -5,7 +5,7 @@ const todos = ["one task", "two task"]
 
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
-
+const PORT=process.env.PORT || 5665
 app.get('/', (req, res) => res.send(`
 <form method="post" action="/addtodo">
   <input name="newtodo">
