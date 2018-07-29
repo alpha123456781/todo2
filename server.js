@@ -29,6 +29,6 @@ app.post('/addtodo', (req, res) => {
 })
 
 
-app.listen(3232, () => console.log(`
+app.listen(PORT, () => console.log(`
 Server started on http://localhost:3232
 `))
